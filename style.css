@@ -564,7 +564,7 @@ PROJECTS
     top: 50%;
     left: 90px;
     transform: translateY(100%);
-    color: #48013c;
+    color: white;
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
     max-width: 550px;
@@ -581,7 +581,7 @@ PROJECTS
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgb(254, 249, 250);
+    background-color: #1c1d25;
     opacity: 0;
 }
 
@@ -601,7 +601,7 @@ PROJECTS
 
 .project__description--link {    
     text-decoration: none;
-    color: #48013c;
+    color: white;
     margin-right: 8px;
     font-size: 20px;
     border-radius: 4px; 
