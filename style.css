@@ -311,12 +311,6 @@ button:active {
     animation: scroll 1000ms infinite alternate-reverse;
 }
 
-
-
-
-
-
-
 .marron {
     color: #48013c;
 }
@@ -363,7 +357,7 @@ MODAL
 }
 
 .modal__about {
-    background-color: rgb(255, 216, 241);
+    background-color: rgb(255, 216, 241); 
     color: #48013c;
     transform: translateX(-110%);          
 }
@@ -472,7 +466,7 @@ MODAL
 
 .modal__overlay--success {
     background-color: #1c8df5; 
-    color: rgb(255, 216, 241);   
+    color: white;   
     font-size: 40px;
     font-weight: 700;
     text-align: center;
