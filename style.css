@@ -102,7 +102,9 @@ nav,
 
 input, textarea {
     width: 100%;
-    color: #f800ce;
+    color: green;
+    font-size: 18px;
+    font-weight: 700;
     outline: none;
     border: 6px solid #1c8df5;
     border-top: none;
@@ -286,7 +288,6 @@ button:active {
     width: 20px;
     border: 2px solid #48013c;
     border-radius: 24px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,34 +343,37 @@ MODAL
 }
 
 .modal__half {
-    width: 50%;
-    padding: 40px 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    transition: all 300ms ease-in;
+  width: 50%;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: all 300ms ease;
 }
 
 .modal--open .modal__about, 
-.modal--open .modal__contact {
-    transform: translateX(0%);
-}
-
-.modal__about {
-    background-color: rgb(255, 216, 241); 
-    color: #48013c;
-    transform: translateX(-110%);   
-}
-
-.model__half--title-contact {
-   color: rgb(255, 216, 241); 
+.modal--open .modal__contact
+ {
+  transform: translateX(0%);
 }
 
 .modal__contact {
-    background-color: #48013c; 
-    color: rgb(255, 216, 241);
+    background-color: #654321; 
+    color: white;
     transform: translateX(110%);
+}
+
+.modal__about {
+    background-color: green; 
+    color: white;
+    transform: translateX(-110%);   
+}
+
+.modal__half--title-contact {
+   color: rgb(255, 216, 241); 
 }
 
 .modal__languages {    
@@ -378,8 +382,9 @@ MODAL
 }
 
 .modal__language {
-    width: 25%; 
+    width: 23%; 
     padding: 16px;
+    color: white;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -388,16 +393,19 @@ MODAL
 }
 
 .modal__language:hover {
-    filter: brightness(80%);
+    filter: brightness(110%);
     transform: scale(0.9);
 }
 
 .modal__language:hover .language__name {
     transform: scale(1);
+    color: white;
 }
 
 .language__name {
     position: absolute;
+    font-size: 16px;
+    font-weight: 700;
     bottom: -10px;
     transform: scale(0);
     transition: all 300ms ease;
@@ -413,7 +421,8 @@ MODAL
 
 .modal__sub-title {
     margin: 12px 0 24px 0;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .modal__para {    
@@ -426,9 +435,9 @@ MODAL
 }
 
 .form__submit {
-    background-color:#48013c;
+    background-color:#654321;
     border: 3px solid #1c8df5;
-    color: rgb(255, 216, 241);
+    color: white;
     margin-bottom: 60px;
     font-weight: 700;    
     width: 100%;
@@ -499,7 +508,7 @@ MODAL
     position: absolute;
     top: 30px;
     right: 40px;
-    color: rgb(255, 216, 241); 
+    color: white; 
     font-size: 28px;
     z-index: 100;
 }
