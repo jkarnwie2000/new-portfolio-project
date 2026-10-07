@@ -619,6 +619,7 @@ PROJECTS
 
 .project__description--para {
     line-height: 1.5;
+    filter: brightness(180%);
 }
 
 /* 
